@@ -1,0 +1,19 @@
+<h3 class='banner'><%= actor_name %></h3>
+  <table>
+    <tr>
+      <th align="left">Movie</th>
+      <th align="left">Year</th>
+      <th align="left">Character</th>
+    </tr>
+  <% work_details.each do |movie| %>
+  <tr>
+    <td><a href="/movies/<%= movie["title"] %>"><%= movie["title"] %></td>
+    <td><%= movie["year"] %></td>
+    <td><%= movie["character"] %></td>
+  </tr>
+  <% end %>
+  <tr>
+    <td><b><a href="/actors">Back to the Actors</a></b></td>
+    <td><b><a href="/movies">Back to the Movies</a></b></td>
+  </tr>
+</table>

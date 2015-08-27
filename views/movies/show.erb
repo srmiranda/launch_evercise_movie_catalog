@@ -1,0 +1,18 @@
+<h3 class='banner'><%= movie_name %></h3>
+ <h4 id='genre'><%= genre_studio[0]["genre"] + " - " + genre_studio[0]["studio"] %></h4>
+  <table>
+    <tr>
+      <th>Actor</th>
+      <th>Character</th>
+    </tr>
+  <% movie_details.each do |movie| %>
+  <tr>
+    <td><a href="/actors/<%= movie["actor"] %>"><%= movie["actor"] %></td>
+    <td><%= movie["character"] %></td>
+  </tr>
+  <% end %>
+  <tr>
+    <td><b><a href="/actors">Back to the Actors</a></b></td>
+    <td><b><a href="/movies">Back to the Movies</a></b></td>
+  </tr>
+</table>

@@ -1,0 +1,10 @@
+
+<h2 class='banner'>Actors</h2>
+<p>
+<ul>
+  <% actors.each do |actor| %>
+  <li><a href="/actors/<%= actor["name"] %>"><%= actor["name"] %></a></li>
+  <% end %>
+</ul>
+<p>
+<a href="/actors">Switch to Movies</a>

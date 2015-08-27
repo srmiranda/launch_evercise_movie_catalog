@@ -1,0 +1,43 @@
+body {
+  background-color: #D1D1D1;
+  font-family: sans-serif, 'Arial';
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  background-color: black;
+  color: white;
+  margin: 0px;
+  padding: 30px;
+  font-size: 30pt;
+  font-weight: bold;
+  border-bottom: solid 5px white;
+}
+
+
+#genre {
+  padding-left: 35px;
+}
+
+
+table {
+    border-spacing: 40px;
+    border-collapse: separate;
+}
+
+table th {
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+}
+
+a:visted {
+  color: black;
+}
